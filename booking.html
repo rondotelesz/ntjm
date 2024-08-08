@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian Tiket Bus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="company-name">Narogong Transindo Jaya Mandiri</span>
+            <img src="images/ntjm.png" alt="Logo" class="logo">
+            <nav class="nav-menu">
+                <a href="tiket.html">Kembali</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="results">
+            <h1>Hasil Pencarian Tiket Bus</h1>
+            <div class="filter">
+                <!-- Display the selected filters -->
+                <p>Asal: <span id="asal"></span></p>
+                <p>Tujuan: <span id="tujuan"></span></p>
+                <p>Tanggal: <span id="tanggal"></span></p>
+                <p>Jumlah Kursi: <span id="jumlah-kursi"></span></p>
+                <p>Kelas: <span id="kelas"></span></p>
+            </div>
+            <div class="results-list">
+                <!-- Example bus results; replace with dynamic content as needed -->
+                <div class="bus-result">
+                    <h2>Super Eksekutif</h2>
+                    <p>Waktu Keberangkatan: 12:35</p>
+                    <p>Harga: Rp. 650,000</p>
+                    <button>Pilih</button>
+                </div>
+                <div class="bus-result">
+                    <h2>Eksekutif</h2>
+                    <p>Waktu Keberangkatan: 13:30</p>
+                    <p>Harga: Rp. 325,000</p>
+                    <button>Pilih</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NTJM. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('asal').textContent = urlParams.get('asal');
+        document.getElementById('tujuan').textContent = urlParams.get('tujuan');
+        document.getElementById('tanggal').textContent = urlParams.get('tanggal');
+        document.getElementById('jumlah-kursi').textContent = urlParams.get('jumlah-kursi');
+        document.getElementById('kelas').textContent = urlParams.get('kelas');
+    </script>
+</body>
+</html>

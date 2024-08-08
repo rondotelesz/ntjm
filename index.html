@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTJM Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="company-name">Narogong Transindo Jaya Mandiri</span>
+            <img src="images/ntjm.png" alt="Logo" class="logo">
+            <nav class="nav-menu">
+                <a href="#tentang-kami" onclick="scrollToSection(event, 'tentang-kami')">Tentang Kami</a>
+                <a href="#armada" onclick="scrollToSection(event, 'armada')">Armada</a>
+                <a href="#jurusan" onclick="scrollToSection(event, 'jurusan')">Jurusan</a>
+                <a href="#hubungi-kami" onclick="scrollToSection(event, 'hubungi-kami')">Hubungi Kami</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="images/bus.png" alt="Bus" class="hero-bus-image">
+                <div class="hero-text">
+                    <h1>Narogong Transindo Jaya Mandiri</h1>
+                    <h2>2 Kelas Layanan</h2>
+                    <p>Terdapat 2 Kelas Layanan, AKAP & Pariwisata. Semua Unit Aman & Siap Jalan</p>
+                    <button onclick="scrollToSection(event, 'tentang-kami')">Selengkapnya</button>
+                </div>
+            </div>
+        </section>
+        <section id="tentang-kami" class="about-us">
+            <img src="images/about.png" alt="About Us" class="about-us-image">   
+            <p>PT. Narogong Transindo Jaya Mandiri (NTJM) berdiri sejak tahun 2022, yang memiliki rute favorit Bekasi - Surabaya, dan berkembang sampai Malang, dan kini PT. Narogong Transindo Jaya Mandiri memiliki berbagai macam jurusan ke Jawa Tengah dan juga Jawa Timur.</p>
+            <p>Untuk kelas Eksekutif, NTJM menyediakan Hino RN 285, Mercy O 500 RS, Scania K410 iB dengan air suspension yang dapat memberikan nilai plus bagi kenyamanan penumpang dalam perjalanan.</p>
+        </section>
+        <section id="armada" class="armada">
+            <h2>Detail Armada</h2>
+            <div class="bus">
+                <img src="images/bus.png" alt="Bus AKAP" class="bus-akap">
+                <h3>Bus AKAP/Antar Kota Antar Provinsi</h3>
+                <p>Bus AKAP kami dirancang untuk perjalanan jarak jauh dengan berbagai fitur kenyamanan untuk memastikan pengalaman perjalanan yang optimal. Dilengkapi dengan kursi yang ergonomis dan ruang kaki yang luas, bus ini menawarkan kenyamanan ekstra selama perjalanan antar kota. Selain itu, fasilitas hiburan di dalam bus seperti layar TV dan audio system membuat perjalanan Anda lebih menyenangkan. Dengan sistem suspensi yang canggih, kami memastikan perjalanan Anda tetap stabil dan nyaman, meskipun melalui jalur yang tidak rata.</p>
+            </div>
+            <div class="bus">
+                <img src="images/bus2.png" alt="Bus Pariwisata" class="bus-pariwisata">
+                <h3>Bus Pariwisata</h3>
+                <p>Bus Pariwisata kami menyediakan pengalaman perjalanan yang mewah dan nyaman dengan desain interior yang elegan dan fasilitas premium. Ideal untuk perjalanan wisata, bus ini dilengkapi dengan kursi yang dapat direbahkan, sistem pendingin udara yang efisien, dan berbagai fasilitas hiburan seperti layar monitor dan koneksi Wi-Fi untuk memastikan perjalanan yang menyenangkan. Dengan kapasitas yang optimal dan ruang yang luas, bus ini memberikan pengalaman yang menyenangkan untuk kelompok besar, baik untuk perjalanan dalam kota maupun luar kota.</p>
+            </div>
+        </section>
+
+        <section id="jurusan" class="jurusan">
+            <img src="images/jurusan.png" alt="Jurusan NTJM" class="jurusan-title-image">
+            <div class="jurusan-content">
+                <p>NTJM memiliki jurusan dari Jawa Barat (Bekasi), Jawa Tengah sampai Jawa Timur, dengan kelas armada eksekutif, layout kursi 2 - 2, dan terdapat lebih dari 100 titik agen, silahkan  chat Official Whatsapp NTJM di nomor 08176765000, saat ini tiket Online sudah tersedia di Kota Bekasi, Solo, Jogja, Surabaya, & Malang.</p>
+                <img src="images/bus.png" alt="Bus Jurusan" class="jurusan-bus-image">
+            </div>
+            <button class="pesan-tiket-button" onclick="location.href='tiket.html'">Pesan Tiket</button>
+        </section>
+
+        <section id="hubungi-kami" class="contact-info">
+            <h2>Hubungi Kami</h2>
+            <p>Jl. Raya Narogong No.km 11, RT.003/RW.009, Bantargebang, Kec. Bantar Gebang, Kota Bks, Jawa Barat 17151</p>
+            <p>WhatsApp: +6281 331 50 7000, +6281 7676 5000</p>
+            <p>Email: support@ntjm.com</p>
+            <div class="bus-photos">
+                <img src="images/cnc.png" alt="Bus 1" class="bus-photo">
+                <img src="images/ntjm.png" alt="Bus 2" class="bus-photoo">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+
+        </div>
+        <p>&copy; 2024 NTJM. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function scrollToSection(event, id) {
+            event.preventDefault();
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
